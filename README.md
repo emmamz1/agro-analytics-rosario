@@ -1,6 +1,6 @@
 # Monitor de Inteligencia Productiva - Hinterland Rosario
 
-![Dashboard Preview]()
+![Dashboard Preview](img/dashboard_preview.png)
 
 ## Descripción del Proyecto
 Este proyecto desarrolla un flujo de datos integral (**Pipeline ETL**) para el análisis de la salud productiva del **Hinterland del Gran Rosario**. Se enfoca en los departamentos de "flete corto" (Rosario, San Lorenzo, Constitución y Caseros), cuya producción es el motor logístico de las terminales portuarias que concentran el ~80% de las exportaciones agroindustriales de Argentina.
@@ -25,6 +25,8 @@ El proyecto sigue una arquitectura de pipeline profesional:
 * **Ciclos de Producción:** Identificación de tendencias interanuales y el impacto de fenómenos climáticos en la disponibilidad de carga para exportación.
 
 ## Estructura del Repositorio
+* `raw_estimaciones.csv`: Archivo de estimaciones agricolas en crudo.
+* `clean_estimaciones.csv`: Archivo de estimaciones agricolas limpio y filtrado.
 * `etl_limpieza.py`: Script de Python para la limpieza y normalización de datos.
 * `sql_ingesta.py`: Script de automatización de carga a base de datos.
 * `01_creacion_tablas.sql`: Script SQL para la creación de tablas y estructura.
